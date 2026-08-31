@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aura — Creative Talent Studio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- NOISE OVERLAY -->
+  <div class="noise"></div>
+
+  <!-- SCROLL PROGRESS -->
+  <div class="progress" id="progress"></div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="cursor" id="cursor"></div>
+
+  <!-- NAVBAR -->
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#top" class="nav__logo">aura<span class="nav__logo-dot">.</span></a>
+      <div class="nav__links" id="navLinks">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#process">Process</a>
+        <a href="#voices">Voices</a>
+        <a href="#faq">FAQ</a>
+      </div>
+      <a href="#join" class="nav__cta">Let's talk
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+      <button class="nav__burger" id="navBurger" aria-label="Menu"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero__top">
+      <span class="hero__eyebrow">Creative Talent Studio — Est. 2026</span>
+      <span class="hero__meta">Worldwide / Remote / Always On</span>
+    </div>
+    <h1 class="hero__title">
+      <span class="hero__line">We turn ambition</span>
+      <span class="hero__line hero__line--accent">
+        <em>into</em>
+        <span class="hero__word" id="wordRotate">craftwork</span>
+      </span>
+    </h1>
+    <div class="hero__bottom">
+      <p class="hero__desc">Aura connects mission-driven teams with hand-picked creative and technical talent — designers, developers, editors, writers, and builders who care.</p>
+      <a href="#join" class="hero__btn">
+        Start your project
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+      </a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hstat"><span class="hstat__num" data-count="420" data-suffix="+">0</span><span class="hstat__label">Projects shipped</span></div>
+      <div class="hstat"><span class="hstat__num" data-count="300" data-suffix="+">0</span><span class="hstat__label">Creators onboard</span></div>
+      <div class="hstat"><span class="hstat__num" data-count="96" data-suffix="%">0</span><span class="hstat__label">Client retention</span></div>
+      <div class="hstat"><span class="hstat__num" data-count="12" data-suffix="">0</span><span class="hstat__label">Countries served</span></div>
+    </div>
+  </section>
+
+  <!-- WORK / SELECTED -->
+  <section class="work" id="work">
+    <div class="section">
+      <div class="section__head">
+        <span class="section__num">00</span>
+        <h2 class="section__title">Selected<br /><em>work</em></h2>
+        <p class="section__desc">A glimpse of the collaborations we're proud of. Every piece is a partnership, not a transaction.</p>
+      </div>
+
+      <div class="work__list">
+        <a href="#join" class="work__item" style="--img:linear-gradient(135deg,#0b0b0f,#2a2a35)">
+          <div class="work__meta"><span class="work__tag">Web · 2026</span><span class="work__arrow">↗</span></div>
+          <h3 class="work__title">Lumen Finance</h3>
+          <p class="work__sub">Replatformed a legacy product into a modern, accessible fintech experience. Load times cut in half, signups up 2.3×.</p>
+        </a>
+        <a href="#join" class="work__item" style="--img:linear-gradient(135deg,#e4572e,#f4a261)">
+          <div class="work__meta"><span class="work__tag">Motion · 2025</span><span class="work__arrow">↗</span></div>
+          <h3 class="work__title">Solstice Film</h3>
+          <p class="work__sub">Full post-production for a short film — editing, color, and sound that earned two festival selections.</p>
+        </a>
+        <a href="#join" class="work__item" style="--img:linear-gradient(135deg,#00a896,#107a66)">
+          <div class="work__meta"><span class="work__tag">Automation · 2026</span><span class="work__arrow">↗</span></div>
+          <h3 class="work__title">Harvest AI</h3>
+          <p class="work__sub">Custom AI agents that triage support tickets and route requests. The ops team reclaimed 30 hours a week.</p>
+        </a>
+        <a href="#join" class="work__item" style="--img:linear-gradient(135deg,#f4a261,#e4572e)">
+          <div class="work__meta"><span class="work__tag">Brand · 2025</span><span class="work__arrow">↗</span></div>
+          <h3 class="work__title">Noma Skincare</h3>
+          <p class="work__sub">Identity, packaging, and launch content that took the brand from zero to fully stocked in a season.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee">
+    <div class="marquee__track">
+      <span>Web Design</span><span>•</span><span>Development</span><span>•</span><span>Motion</span><span>•</span><span>Strategy</span><span>•</span><span>Branding</span><span>•</span><span>Content</span><span>•</span><span>Automation</span><span>•</span>
+      <span>Web Design</span><span>•</span><span>Development</span><span>•</span><span>Motion</span><span>•</span><span>Strategy</span><span>•</span><span>Branding</span><span>•</span><span>Content</span><span>•</span><span>Automation</span><span>•</span>
+    </div>
+  </div>
+
+  <!-- SERVICES -->
+  <section class="services" id="services">
+    <div class="section">
+      <div class="section__head">
+        <span class="section__num">01</span>
+        <h2 class="section__title">What we<br /><em>do</em></h2>
+        <p class="section__desc">A curated set of disciplines, matched to the people who love them. Every project gets a dedicated lead who sweats the details.</p>
+      </div>
+
+      <div class="services__grid">
+        <article class="service" style="--c:#0b0b0f;--i:0">
+          <div class="service__top"><span class="service__index">01</span><span class="service__arrow">↗</span></div>
+          <h3 class="service__title">Web &amp; App</h3>
+          <p class="service__body">Design and build of fast, accessible interfaces that feel as good as they look. From landing pages to full products.</p>
+          <ul class="service__tags">
+            <li>Websites</li><li>Mobile Apps</li><li>Design Systems</li>
+          </ul>
+        </article>
+
+        <article class="service" style="--c:#e4572e;--i:1">
+          <div class="service__top"><span class="service__index">02</span><span class="service__arrow">↗</span></div>
+          <h3 class="service__title">Broadcast &amp; Film</h3>
+          <p class="service__body">Cinematic editing, motion design, and thumbnails built to stop the scroll and hold attention.</p>
+          <ul class="service__tags">
+            <li>Video Editing</li><li>Thumbnails</li><li>Motion</li>
+          </ul>
+        </article>
+
+        <article class="service" style="--c:#00a896;--i:2">
+          <div class="service__top"><span class="service__index">03</span><span class="service__arrow">↗</span></div>
+          <h3 class="service__title">Automation &amp; AI</h3>
+          <p class="service__body">Workflows and AI agents that do the repetitive work, so your team can focus on what matters.</p>
+          <ul class="service__tags">
+            <li>AI Agents</li><li>Workflows</li><li>Integrations</li>
+          </ul>
+        </article>
+
+        <article class="service" style="--c:#f4a261;--i:3">
+          <div class="service__top"><span class="service__index">04</span><span class="service__arrow">↗</span></div>
+          <h3 class="service__title">Words &amp; Content</h3>
+          <p class="service__body">Scripts, copy, and short-form clips with hooks that earn the click and keep the viewer.</p>
+          <ul class="service__tags">
+            <li>Scripts</li><li>Copywriting</li><li>Clipping</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process" id="process">
+    <div class="section">
+      <div class="section__head">
+        <span class="section__num">02</span>
+        <h2 class="section__title">A simple<br /><em>rhythm</em></h2>
+        <p class="section__desc">Three steps, clear expectations, no surprises. You always know where your project stands.</p>
+      </div>
+
+      <div class="process__list">
+        <div class="process__item">
+          <span class="process__num">A.</span>
+          <div class="process__content">
+            <h3>Introduce</h3>
+            <p>Tell us your goal, timeline, and budget. We reply within a day with ideas and honest advice — free.</p>
+          </div>
+        </div>
+        <div class="process__item">
+          <span class="process__num">B.</span>
+          <div class="process__content">
+            <h3>Connect</h3>
+            <p>We match you with a vetted lead whose craft fits your project. Scope, milestones, and pricing up front.</p>
+          </div>
+        </div>
+        <div class="process__item">
+          <span class="process__num">C.</span>
+          <div class="process__content">
+            <h3>Deliver</h3>
+            <p>Collaborate in the open. Regular updates, on-time delivery, and a finished result you're proud to ship.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VOICES -->
+  <section class="voices" id="voices">
+    <div class="section">
+      <div class="section__head">
+        <span class="section__num">03</span>
+        <h2 class="section__title">Kind<br /><em>words</em></h2>
+        <p class="section__desc">A few notes from teams we've had the pleasure to work alongside.</p>
+      </div>
+
+      <div class="voices__grid">
+        <blockquote class="voice">
+          <p class="voice__text">"Aura found us a developer who rebuilt our entire funnel. Conversion doubled in six weeks. Genuinely the smoothest collaboration we've had."</p>
+          <cite class="voice__cite"><span class="voice__name">Maya Okafor</span><span class="voice__role">Growth Lead, Lumen</span></cite>
+        </blockquote>
+        <blockquote class="voice">
+          <p class="voice__text">"The video editor understood our brand instantly. The thumbnails alone lifted CTR by 40%. Worth every cent."</p>
+          <cite class="voice__cite"><span class="voice__name">Rafael Silva</span><span class="voice__role">Creator, 2.1M subs</span></cite>
+        </blockquote>
+        <blockquote class="voice">
+          <p class="voice__text">"They automated three workflows that were eating our staff's week. The AI agent pays for itself many times over."</p>
+          <cite class="voice__cite"><span class="voice__name">Priya Nair</span><span class="voice__role">COO, Vertex Labs</span></cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="faq" id="faq">
+    <div class="section">
+      <div class="section__head">
+        <span class="section__num">04</span>
+        <h2 class="section__title">Good to<br /><em>know</em></h2>
+        <p class="section__desc">Answers to the questions we hear most. Can't find yours? Just ask — we reply fast.</p>
+      </div>
+
+      <div class="faq__list">
+        <div class="faq__item">
+          <button class="faq__q">
+            <span>How quickly will I hear back?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Usually within one business day. For urgent projects, mention it in your message and we'll prioritise you.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            <span>How are projects priced?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Fixed scoped quotes agreed up front, or fixed milestone payments for larger work. No hourly surprises, ever.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            <span>Can I join as a creator?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Absolutely — that's half the point. Share your craft and we'll match you with projects that fit your skills and style.</p>
+          </div>
+        </div>
+        <div class="faq__item">
+          <button class="faq__q">
+            <span>Do you work with teams in any timezone?</span>
+            <span class="faq__icon">+</span>
+          </button>
+          <div class="faq__a">
+            <p>Yes. We're fully remote and organise communication around your team's working hours, whatever they look like.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- JOIN -->
+  <section class="join" id="join">
+    <div class="section section--join">
+      <h2 class="join__title">Find your people,<br />or <em>be</em> found.</h2>
+      <p class="join__sub">One profile, two directions. Tell us what you're looking for and we take it from there.</p>
+      <div class="join__cards">
+        <button class="join__card" data-role="hire">
+          <span class="join__card-top">I'm hiring <span>↗</span></span>
+          <h3>Find talent</h3>
+          <p>Post a project, review curated matches, and work with vetted professionals.</p>
+          <span class="join__card-link">Get started</span>
+        </button>
+        <button class="join__card" data-role="talent">
+          <span class="join__card-top">I'm creating <span>↗</span></span>
+          <h3>Get hired</h3>
+          <p>Build a profile, show your craft, and get matched with teams that need you.</p>
+          <span class="join__card-link">Join the studio</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="section">
+      <div class="footer__big">Let's build<br /><em>together.</em></div>
+      <form class="footer__news" id="newsForm" onsubmit="handleNews(event)">
+        <span class="footer__news-label">Ideas worth sharing, monthly.</span>
+        <div class="footer__news-row">
+          <input type="email" placeholder="you@email.com" required aria-label="Email" />
+          <button type="submit" class="btn-arrow">Subscribe
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </button>
+        </div>
+      </form>
+      <div class="footer__bottom">
+        <span class="footer__copy">© 2026 Aura Studio</span>
+        <div class="footer__links">
+          <a href="#">hello@aura.studio</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+        <button class="back-top" id="backTop" aria-label="Back to top">↑</button>
+      </div>
+    </div>
+  </footer>
+
+  <!-- MODAL -->
+  <div class="modal" id="modal" aria-hidden="true">
+    <div class="modal__card">
+      <button class="modal__close" id="modalClose" aria-label="Close">×</button>
+      <header class="modal__head">
+        <h3 id="modalTitle">Start your project</h3>
+        <p id="modalSub">Tell us a little about yourself — we'll reply within a day.</p>
+      </header>
+      <form class="modal__form" id="signupForm" onsubmit="handleSignup(event)">
+        <div class="modal__row">
+          <label>Name<input type="text" placeholder="Your name" required /></label>
+          <label>Email<input type="email" placeholder="you@site.com" required /></label>
+        </div>
+        <label>Company / project<input type="text" placeholder="What are we building?" /></label>
+        <label id="skillsBlock" style="display:none">Your skills
+          <select multiple>
+            <option>Web &amp; App</option>
+            <option>Video Editing</option>
+            <option>Thumbnails</option>
+            <option>AI Automation</option>
+            <option>Scriptwriting</option>
+            <option>Clipping</option>
+            <option>Copywriting</option>
+          </select>
+        </label>
+        <button type="submit" class="modal__submit">Send it over</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- TOAST -->
+  <div class="toast" id="toast"><span id="toastMsg"></span></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
